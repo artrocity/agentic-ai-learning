@@ -1,0 +1,29 @@
+# Include Phase 1 packages plus:
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scipy>=1.10.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=1.7.0
+
+# Deep Learning (choose one initially)
+tensorflow>=2.13.0
+# OR torch>=2.0.0 torchvision>=0.15.0
+
+# NLP basics
+nltk>=3.8.0
+textblob>=0.17.0
+
+# Time series
+statsmodels>=0.14.0
+
+# Development
+jupyter>=1.0.0
+ipython>=8.14.0
+tqdm>=4.65.0
+
+#USAGE GUIDE: This file contains the required packages for the Phase 2 project.
+# Install with pip install -r phase-2-requirements.txt
