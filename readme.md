@@ -45,28 +45,28 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Python setup, basic syntax (variables, print statements)
 - **Resource:** [FreeCodeCamp Python Tutorial](https://www.freecodecamp.org/learn/scientific-computing-with-python/) (first 30 minutes)
 - **Task:** Install Python and VS Code. Write a simple program to print your name and a motivational message
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 2: Data Types and Operations
 
 - **Topic:** Strings, integers, floats, basic arithmetic, and type conversion
 - **Resource:** [W3Schools Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 - **Task:** Write a program to calculate your age based on birth year input
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 3: Lists and Loops
 
 - **Topic:** Lists, for loops, and while loops
 - **Resource:** [Automate the Boring Stuff with Python (Chapter 2)](https://automatetheboringstuff.com/2e/chapter2/)
 - **Task:** Create a list of 5 emotions and print each using a loop
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 4: Conditionals
 
 - **Topic:** If-else statements, comparison operators
 - **Resource:** Codecademy Python (free section on conditionals)
 - **Task:** Write a program that checks if a number is positive, negative, or zero
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 5: Functions
 

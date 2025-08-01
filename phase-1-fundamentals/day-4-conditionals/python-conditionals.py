@@ -12,10 +12,10 @@ user_num = int(input('Please provide a number: '))
 
 # Calculate if the number is positive, negative, or zero
 if user_num > 0:
-  print(f'{user_num} is Positive!')
+    print(f'{user_num} is Positive!')
 elif user_num == 0: 
-  print(f'{user_num} is Zero')
+    print(f'{user_num} is Zero')
 elif user_num < 0:
-  print(f'{user_num} is Negative')
+    print(f'{user_num} is Negative')
 else:
-  print("Not a valid number")
+    print("Not a valid number")
