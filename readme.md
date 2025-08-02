@@ -73,7 +73,7 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Defining functions, parameters, return statements
 - **Resource:** [Python.org Functions Tutorial](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 - **Task:** Create a function that takes a heart rate value and returns "Normal" or "Elevated" (threshold: 100 bpm)
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 6: Dictionaries and Sets
 
