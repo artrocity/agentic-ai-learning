@@ -80,14 +80,14 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Key-value pairs, sets for unique items
 - **Resource:** [Real Python Dictionaries Tutorial](https://realpython.com/python-dicts/)
 - **Task:** Store 3 user profiles (name, stress level) in a dictionary and print them
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 7: Error Handling
 
 - **Topic:** Try-except blocks, handling invalid inputs
 - **Resource:** [Programiz Python Exception Handling](https://www.programiz.com/python-programming/exception-handling)
 - **Task:** Modify Day 5's function to handle non-numeric inputs gracefully
-- [ ] Completed
+- [ X ] Completed
 
 ### Week 2: Advanced Python Concepts
 
@@ -96,14 +96,14 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Reading/writing text files for data storage
 - **Resource:** [Automate the Boring Stuff (Chapter 8)](https://automatetheboringstuff.com/2e/chapter8/)
 - **Task:** Save a list of stress levels to a file and read it back
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 9: Python Modules and Libraries
 
 - **Topic:** Importing modules (e.g., math, random)
 - **Resource:** [Real Python Modules Tutorial](https://realpython.com/python-modules-packages/)
 - **Task:** Use the random module to simulate a heart rate (60–120 bpm)
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 10: Object-Oriented Programming (OOP) Basics
 
