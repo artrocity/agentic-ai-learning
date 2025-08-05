@@ -124,7 +124,7 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Basics of APIs, making HTTP requests with requests
 - **Resource:** [FreeCodeCamp Python Requests Tutorial](https://www.youtube.com/watch?v=tb8gHvYlCFs)
 - **Task:** Use a public API (e.g., weather API) to fetch data and print it
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 13: Data Analysis with Pandas
 
