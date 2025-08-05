@@ -110,14 +110,14 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Classes, objects, methods
 - **Resource:** [Corey Schafer's OOP Python Tutorial](https://www.youtube.com/watch?v=ZDa-Z5JzLYM) (YouTube, first 30 minutes)
 - **Task:** Create a User class with attributes for name and stress level
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 11: OOP Inheritance
 
 - **Topic:** Inheritance, subclasses
 - **Resource:** [Real Python OOP Inheritance](https://realpython.com/inheritance-composition-python/)
 - **Task:** Extend the User class to a MentalHealthUser subclass with a method to log stress
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 12: Working with APIs
 
