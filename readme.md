@@ -131,14 +131,14 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Intro to Pandas, DataFrames, basic operations
 - **Resource:** [Pandas Getting Started](https://pandas.pydata.org/docs/getting_started/index.html)
 - **Task:** Create a DataFrame with sample heart rate data and calculate the average
-- [ ] Completed
+- [ X ] Completed
 
 #### Day 14: Data Visualization with Matplotlib
 
 - **Topic:** Plotting data (line plots, bar charts)
 - **Resource:** [Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html)
 - **Task:** Plot a week's worth of simulated heart rate data
-- [ ] Completed
+- [ X ] Completed
 
 ### Week 3: Data Science Foundations
 
