@@ -147,7 +147,7 @@ This guide will take you from beginner to building sophisticated AI agents that 
 - **Topic:** Arrays, basic numerical operations
 - **Resource:** [NumPy Quickstart Tutorial](https://numpy.org/doc/stable/user/quickstart.html)
 - **Task:** Use NumPy to calculate the mean and standard deviation of stress levels
-- [ ] Completed
+- [ X ] Completed
 
 #### Days 16–20: Mini-Project - Stress Tracker
 
