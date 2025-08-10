@@ -22,6 +22,7 @@ This mini-project is part of a Python learning journey (Days 16-20) focused on b
   - `pandas` - for data manipulation
   - `numpy` - for array management
   - `datetime` - for timestamp management
+  - `json` - for string to object and object to string management
 
 ## Installation
 
@@ -64,9 +65,7 @@ The application stores data using Python dictionaries with the following structu
 ```python
 [
     {
-        "user_id": "1",
         "name": "John",
-        "created_date": "2024-01-01",
         "entries": [
             {
                 "date": "2024-01-15",
@@ -101,10 +100,10 @@ Stretch Goals for this specific project
 
 Each day includes a focused 12-minute refinement session:
 
-- **Day 16**: Core functionality and data storage
-- **Day 17**: Basic visualization implementation
-- **Day 18**: Input validation and error handling
-- **Day 19**: Enhanced plotting and styling
+- **Day 16**: Core Functionality and File Structure
+- **Day 17**: Obtain user input, validation, log entries
+- **Day 18**: Use pandas and matplotlib to plot and summarize data
+- **Day 19**: Delete data if user requests
 - **Day 20**: Code optimization and documentation
 
 ## Contributing
