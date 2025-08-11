@@ -54,7 +54,7 @@ def log_data():
 
     # Read from file and see if user data exists
     try:
-        with open('user_data.json', 'r', encoding='utf-8') as file:
+        with open('./data/user_data.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
 
         # loop through data and see if user exists and add their entry
@@ -64,18 +64,18 @@ def log_data():
                 if user_name.lower() == user['name'].lower():
                     user['entries'].append(log_entry['entries'][0])
 
-            with open('user_data.json', 'w', encoding='utf-8') as file:
+            with open('./data/user_data.json', 'w', encoding='utf-8') as file:
                 json.dump(data, file)
 
         # If they dont exist append their record
         else:
             data.append(log_entry)
-            with open('user_data.json', 'w', encoding='utf-8') as file:
+            with open('./data/user_data.json', 'w', encoding='utf-8') as file:
                 json.dump(data, file)
         
     
     except FileNotFoundError:
-        with open('user_data.json', 'w', encoding='utf-8') as file:
+        with open('./data/user_data.json', 'w', encoding='utf-8') as file:
             # Create an empty list of users
             user_data = []
 
