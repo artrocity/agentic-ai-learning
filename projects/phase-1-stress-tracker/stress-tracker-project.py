@@ -38,7 +38,7 @@ def log_data():
     hr, stress_level = get_hr_stress()
 
     # Get current date and time
-    current_datetime = datetime.datetime.now()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # Model data for logging
     log_entry = {
@@ -69,12 +69,12 @@ def log_data():
                 json.dump(data, file)
 
             # Notify the user their entry has been added
-            print(f'Entry for {user_data['name']} has been created.')
+            print(f'Entry for {user_name} has been created.')
 
         # If they dont exist append their record
         else:
             # Notify user not found
-            print(f'User not found, Creating a record for {log_entry['name']} now...')
+            print(f'User not found, Creating a record for {user_name} now...')
 
             # Append the entry to the log
             data.append(log_entry)
@@ -99,7 +99,7 @@ def log_data():
             json.dump(user_data, file)
 
             # Notify user that the file has been created
-            print(f'User data file created. Log file created for: {log_entry['name']}')
+            print(f'User data file created. Log file created for: {user_name}')
 
 
 def plot_data():
