@@ -158,8 +158,8 @@ This guide will take you from beginner to building sophisticated AI agents that 
   - Visualizes stress trends using Matplotlib
   - **Daily refinement:** Spend 12 minutes daily improving the program (e.g., add input validation, improve plots)
 - [ X ] Day 16 Completed
-- [ X ß] Day 17 Completed
-- [ ] Day 18 Completed
+- [ X ] Day 17 Completed
+- [ X ] Day 18 Completed
 - [ ] Day 19 Completed
 - [ ] Day 20 Completed
 
