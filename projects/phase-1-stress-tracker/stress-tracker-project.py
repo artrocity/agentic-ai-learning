@@ -64,23 +64,42 @@ def log_data():
                 if user_name.lower() == user['name'].lower():
                     user['entries'].append(log_entry['entries'][0])
 
+            # Write the entry to the file
             with open('./data/user_data.json', 'w', encoding='utf-8') as file:
                 json.dump(data, file)
 
+            # Notify the user their entry has been added
+            print(f'Entry for {user_data['name']} has been created.')
+
         # If they dont exist append their record
         else:
+            # Notify user not found
+            print(f'User not found, Creating a record for {log_entry['name']} now...')
+
+            # Append the entry to the log
             data.append(log_entry)
+
+            # Write the entry to the file
             with open('./data/user_data.json', 'w', encoding='utf-8') as file:
                 json.dump(data, file)
         
     
     except FileNotFoundError:
         with open('./data/user_data.json', 'w', encoding='utf-8') as file:
+            # Notify the user the file wasn't found
+            print('User data file not found. Creating it now...')
+
             # Create an empty list of users
             user_data = []
 
+            # Append log entry to file
+            user_data.append(log_entry)
+
             # Convert to a JSON string and write it to a file
             json.dump(user_data, file)
+
+            # Notify user that the file has been created
+            print(f'User data file created. Log file created for: {log_entry['name']}')
 
 
 def plot_data():
