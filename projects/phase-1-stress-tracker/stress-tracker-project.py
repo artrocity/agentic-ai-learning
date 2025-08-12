@@ -6,7 +6,7 @@ import datetime
 import json
 
 # Function to gather user's name
-def get_user_name() -> tuple:
+def get_user_name() -> str:
     while True:
         try:
             user_name = input('Please provide your full name: ').strip()
@@ -194,7 +194,31 @@ def plot_entries():
 
 
 def delete_data():
-    print('Deleting Data....')
+    
+    # open the file
+    try:
+        with open('./data/user_data.json', 'r', encoding='utf-8') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        print('Unable to locate file...')
+        return
+    except json.JSONDecodeError:
+        print('File contains invalid JSON data')
+        return
+
+    # Find the user
+    user_name = get_user_name()
+
+    # Filter to exclude any entries for user (deleting their records)
+    updated_data = [record for record in data if record['name'] != user_name]
+
+    # Open the file and rewrite the information
+    try:
+        with open('./data/user_data.json', 'w', encoding='utf-8') as file:
+            json.dump(updated_data, file)
+            print(f'Sucessfully deleted all records for User: {user_name}')
+    except IOError:
+        print('Unable to write to the file...')
 
 # Main Function
 def main():
@@ -227,3 +251,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
