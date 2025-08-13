@@ -5,8 +5,15 @@ import numpy as np
 import datetime
 import json
 
-# Function to gather user's name
 def get_user_name() -> str:
+    """Prompt and validate user's name input.
+    
+    Returns:
+        str: The validated user name
+    
+    Raises:
+        Exception: If input validation fails
+    """
     while True:
         try:
             user_name = input('Please provide your full name: ').strip()
@@ -16,8 +23,16 @@ def get_user_name() -> str:
         except Exception as e:
             print(f'Error: {e}')
 
-# Function to gather user's heart rate and stress levels
-def get_hr_stress():
+def get_hr_stress() -> tuple[int, int]:
+    """Gather and validate user's heart rate and stress level.
+    
+    Returns:
+        Tuple[int, int]: A tuple containing (heart_rate, stress_level)
+    
+    Raises:
+        ValueError: If input cannot be converted to integer
+        Exception: For other validation errors
+    """
     while True:
         try:
             hr = int(input('Please provide your current heart_rate: '))
@@ -29,8 +44,16 @@ def get_hr_stress():
         except Exception as e:
             print(f'Error: {e}')
 
-# Function to write the data
-def log_data():
+def log_data() -> None:
+    """Log user's heart rate and stress level data to JSON file.
+    
+    Creates a new user entry if user doesn't exist, otherwise appends
+    to existing user's entries.
+    
+    Raises:
+        FileNotFoundError: If data file cannot be accessed
+        json.JSONDecodeError: If JSON data is invalid
+    """
     # Obtain user name
     user_name = get_user_name()
 
@@ -101,8 +124,15 @@ def log_data():
             # Notify user that the file has been created
             print(f'User data file created. Log file created for: {user_name}')
 
-
-def view_entries():
+def view_entries() -> None:
+    """Display all entries for a specific user.
+    
+    Prints formatted view of all recorded entries for the specified user.
+    
+    Raises:
+        FileNotFoundError: If data file cannot be accessed
+        json.JSONDecodeError: If JSON data is invalid
+    """
     # Obtain user's profile to plot
     user_name = get_user_name()
 
@@ -123,7 +153,17 @@ def view_entries():
         else:
             print(f'User {user_name} not found')
 
-def plot_entries():
+def plot_entries() -> None:
+    """Generate and display plots of user's health tracking data.
+    
+    Creates matplotlib visualization showing heart rate and stress level
+    trends over time. Also displays basic statistical information.
+    
+    Raises:
+        FileNotFoundError: If data file cannot be accessed
+        json.JSONDecodeError: If JSON data is invalid
+        Exception: For plotting or data processing errors
+    """
     # Obtain user's profile to plot
     user_name = get_user_name()
 
@@ -193,8 +233,16 @@ def plot_entries():
         print(f'Error reading data: {e}')
 
 
-def delete_data():
+def delete_data() -> None:
+    """Delete all records for a specified user.
     
+    Removes all entries for the specified user from the JSON data file.
+    
+    Raises:
+        FileNotFoundError: If data file cannot be accessed
+        json.JSONDecodeError: If JSON data is invalid
+        IOError: If unable to write to file
+    """
     # open the file
     try:
         with open('./data/user_data.json', 'r', encoding='utf-8') as file:
@@ -220,9 +268,15 @@ def delete_data():
     except IOError:
         print('Unable to write to the file...')
 
-# Main Function
-def main():
-
+def main() -> None:
+    """Main program entry point.
+    
+    Displays menu and handles user interaction with the application.
+    
+    Raises:
+        Exception: For any unhandled errors during execution
+    """
+    # CLI Menu
     print('Welcome to your personal stress tracker')
     print('Available Options')
     print('------ 1.) Record your stress level and heart rate.')
